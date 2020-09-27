@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+ruby '2.6.3'
+
 gem 'rails',      '6.0.3.2'
 # LES has puma = 4.3.5
 # two solutions here: https://github.com/puma/puma/issues/2304
