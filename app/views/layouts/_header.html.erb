@@ -1,0 +1,15 @@
+<header class = "navbar navbar-fixed-top navbar-inverse">
+  <div class = "container">
+    <%= link_to 'American Runner', root_path, id: 'logo' %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "My Plan", signup_path %></li>
+        <li><%= link_to "Buy Me a Coffee?", "https://ko-fi.com/kewpiedoll", 
+                      class: "btn btn-warning btn-default", 
+                      target: "_blank",
+                      id: "coffee_button" %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
