@@ -43,5 +43,6 @@ yarn-debug.log*
 # Ignore Spring files. Reduces conflict between Spring and Git.
 spring/*.pid
 
-# Ignore ruby scratch pad file
+# Ignore my random temp files
 temp-code.rb
+notes.txt

@@ -3,8 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-gem 'rails',      '6.0.3.2'
-gem 'bootstrap-sass',   '3.4.1'
+gem 'rails',          '6.0.3.2'
+gem 'bcrypt',         '3.1.13'
+gem 'bootstrap-sass', '3.4.1'
 # LES has puma = 4.3.5
 # two solutions here: https://github.com/puma/puma/issues/2304
 # I went with puma 4.3.6
