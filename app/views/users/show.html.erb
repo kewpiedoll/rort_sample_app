@@ -22,6 +22,9 @@
   </aside>
   <div class="col-md-10">
     <h1><%= @user.name %> | <%= @user.email %> </h1>
+    <hr />
+    <h1><%= @user.name if logged_in? %>
+      <hr />
     <h1> You personal plan and log will begin here </h1>
   </div>
 </div>
