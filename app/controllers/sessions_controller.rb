@@ -15,8 +15,8 @@ class SessionsController < ApplicationController
         #   <login user> same as <login(user)>
         log_in @user 
         params[:session][:remember_me] == '1' ? remember(@user) : forget(@user)
-        # Chapter 9, final exercise, this was left off the explanation and I got
-        # it from one of the other answers. This could not be 100% right.
+        # Chapter 9, final exercise, the code below was left off the explanation
+        # and I got it from one of the other answers. This could not be 100% right.
         session[:session_token] = @user.session_token
         # same as <render 'users/show'?
         # rails converts it to <user_url(user)>
