@@ -179,7 +179,6 @@ aside {
 /* avatar */
 .avatar {
   float: center;
-  width: 100%;
 }
 
 /* gravatar edit needs ot be avatar_edit once added?
@@ -228,6 +227,18 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
 
 /* miscellaneous */

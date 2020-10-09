@@ -15,14 +15,18 @@
       </div>
       <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
           id="bs-example-navbar-collapse-1">
+          <% if !logged_in? %>
+            <li><%= link_to "About", about_path %></li>
+          <% end %>
         <% if logged_in? %>
+
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Account <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", '#' %></li>
+              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "Log out", logout_path, method: :delete %>
@@ -35,7 +39,8 @@
       <li><%= link_to "Buy Me a Coffee?", "https://ko-fi.com/kewpiedoll", 
                        class: "btn btn-warning btn-default", 
                        target: "_blank",
-                       id: "coffee_button" %></li>
+                       id: "coffee_button",
+                       rel: "noopener" %></li>
       </ul>
     </nav>
   </div>

@@ -17,8 +17,8 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 
-  #log in as a particular user
-  def logg_in_as(user)
+  # Log in as a particular user
+  def log_in_as(user)
     session[:user_id] = user.user_id
   end
 end
